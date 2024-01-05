@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3,120px);
+        grid-template-rows: repeat(6, 60px);
+        grid-gap: 10px;
+    }
+    .item{
+        background-color: black;
+    }
+
+    .hi1 {
+        
+        grid-row: span 3;
+    }
+
+    .hi2 {
+        
+        grid-row: span 3;
+    }
+
+    .hi3 {
+        
+        grid-row: span 2;
+    }
+
+    .hi4 {
+        
+        grid-row: span 2;
+    }
+
+    .hi5 {
+        
+        grid-row: span 3;
+        grid-column: span 2;
+
+    }
+
+    .hi6 {
+        
+        grid-row: span 2;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="item hi1"></div>
+        <div class="item hi2"></div>
+        <div class="item hi3"></div>
+        <div class="item hi4"></div>
+        <div class="item hi5"></div>
+        <div class="item hi6"></div>
+    </div>
+</body>
+
+</html>
