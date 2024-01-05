@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style>
+    .nav1 {
+        padding: 0px 100px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1 p{
+        font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--r-globalnav-color);
+    position: relative;
+    z-index: 1;
+    padding: 0 calc(8px / var(--r-globalnav-text-zoom-scale, 1));
+    height: 44px;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .nav2 {height: 113px;
+        padding: 0px 100px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-gap: 10px;
+        justify-content: space-between;
+    }
+
+    .nav2 a:hover {
+        color: blue;
+    }
+
+    .nav2 img {
+        padding-top: 15px;
+width: 38px;
+height: 54px;
+        cursor: pointer;
+       
+    }
+
+    .nav2 p {
+        font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: block;
+    margin: 0;
+    text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .nav3 {
+        background-color: lightgray;
+        height: 40px;
+    }
+
+    .nav3 a {
+        text-decoration: underline;
+        color: blue;
+
+    }
+
+    .nav3 p {
+        font-size: 14px;
+    line-height: 1.1904761905;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav4 {
+        padding: 100px;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .nav4 a {
+        color: blue;
+    }
+
+    .nav4 div {
+        padding-top: 20px;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        height: 40px;
+        width: 70px;
+        border-radius: 40%;
+        background-color: blue;
+        color: white;
+    }
+
+    .nav4p {
+        color: red;
+    }
+
+    .nav4p2 {
+        font-size: 21px;
+        line-height: 1.381002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+
+    .nav5 {
+        padding: 100px;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+
+        color: white;
+        text-align: center;
+    }
+
+    .nav5 p {
+        color: black;
+    }
+
+    .nav5 a {
+        color: blue;
+    }
+
+    .nav5 div {
+        padding-top: 20px;
+    }
+
+    .nav5 button {
+        border: none;
+        cursor: pointer;
+        height: 40px;
+        width: 70px;
+        border-radius: 40%;
+        background-color: blue;
+        color: white;
+    }
+
+
+
+    .nav5 h1 {
+        color: black;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .nav5p2 {
+        font-size: 21px;
+        line-height: 1.381002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .imgnav5 {
+        width: 1330px;
+        height: 300px;
+
+    }
+
+    .nav6 {
+        height: 20px;
+        background-color: lightgray;
+    }
+
+    .nav7 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .nav71 {
+        text-align: center;
+        padding-top: 300px;
+    }
+
+    .nav71 h1 {
+        color: blue;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .nav71 p {
+        font-size: 21px;
+        line-height: 1.381002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .nav72 img {
+        padding-left: 200px;
+    }
+
+    .nav8 {
+        background-image: url(guided_tour__c40f88on9o8y_large.jpg);
+        height: 780px;
+        background-repeat: no-repeat;
+        border-radius: 4%;
+    }
+
+    .nav8 div {
+        padding: 230px;
+        color: white;
+    }
+
+    .nav8 div button {
+        background-color: white;
+        color: black;
+        border-bottom: 10%;
+        width: 150px;
+    }
+
+    .nav8 p {
+        font-size: 21px;
+        line-height: 1.381002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .nav8 h1 {
+        color: white;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .nav9 h1 {
+        text-align: center;
+        color: black;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .nav9 h4 {
+        text-align: center;
+        color: black;
+        font-size: 18px;
+        line-height: 1.0834933333;
+        font-weight: 520;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .nav91 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding-left: 200px;
+        padding-right: 200px;
+        grid-gap: 50px;
+    }
+
+    .nav9 p {
+        font-size: 14px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .nav9 img {
+        cursor: pointer;
+    }
+
+    .nav10 {
+        text-align: center;
+
+    }
+
+    .nav10 a {
+        font-size: 20px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+    }
+
+    .last1 {
+        display: grid;
+        grid-template-columns: 50% 48%;
+        grid-gap: 20px;
+
+    }
+
+    .last2 {
+        background-color: white;
+    }
+
+    .last3 {
+        background-color: white;
+    }
+
+    .last {
+        padding: 20px 20px 200px 20px;
+        background-color: lightgray;
+    }
+
+    .last2 img {
+        width: 100%;
+        padding-top: 110px;
+
+    }
+
+    .last3 img {
+        height: 350px;
+        width: 80%;
+        padding-top: 100px;
+        padding-left: 60px;
+    }
+
+    .last1 h3 {
+        text-align: center;
+        color: black;
+        font-size: 28px;
+        line-height: 1.0834933333;
+        font-weight: 530;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .last1 p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .last4 a {
+        font-size: 20px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+
+    }
+
+    .last5 {
+
+        background-image: url(why_apple__ezn1ktvka6oi_large.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+
+    .last5 a {
+        font-size: 20px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+        text-align: center;
+    }
+
+    .last5 p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 0.3999999999;
+        font-weight: 500;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .last5 h1 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        line-height: 0.3999999999;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .last5 div {
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+
+    .last6 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .last8 {
+        padding-top: 80px;
+        padding-left: 190px;
+    }
+
+    .last6 h1 {
+        text-align: center;
+        color: black;
+        font-size: 40px;
+        line-height: 1.3999999999;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    .last6 p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 0.3999999999;
+        font-weight: 500;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .last7 {
+        padding-top: 130px;
+        padding-left: 80px;
+    }
+
+    .last9 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .last11 {
+        padding-top: 150px;
+        padding-right: 110px;
+    }
+
+    .last11 h1 {
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .last11 p {
+        font-size: 18px;
+        line-height: 0.981;
+        font-weight: 400;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+
+    .last13 {
+        background-color: white;
+    }
+
+    .last12 h1 {
+        text-align: center;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .last13 {
+        padding-top: 20px;
+    }
+
+    .last14 {
+        font-size: 18px;
+        line-height: 0.981;
+        font-weight: 400;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding-left: 530px;
+        position: absolute;
+    }
+
+    .last14 a {
+        color: blue;
+
+    }
+
+    .last15 img {
+        width: 60px;
+    }
+
+    .last15 {
+        /* height: 80px; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
+
+    .last16 {
+        padding-top: 20px;
+    }
+
+    .last15 p {
+        font-size: 18px;
+        line-height: 0.981;
+        font-weight: 400;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    }
+
+    .last15 b {
+        font-size: 18px;
+        line-height: 0.981;
+        font-weight: 400;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .last15 a {
+        font-size: 20px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+        text-align: center;
+    }
+
+    .last18 {
+        padding-top: 20px;
+    }
+
+    .last18 p {
+        font-size: 18px;
+        line-height: 0.981;
+        font-weight: 400;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    }
+
+    .last18 a {
+        font-size: 20px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+
+    }
+
+    .last18 h1 {
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    .last19 {
+        height: 690px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .last19 h1 {
+        font-size: 40px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    .last19 a {
+        font-size: 19px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+
+    }
+
+    .last20 {
+        background-color: white;
+        width: 632px;
+        height: 377px;
+    }
+
+    .last22 {
+        width: 632px;
+        height: 377px;
+    }
+
+
+    .last21 {
+        height: 377px;
+
+        width: 632px;
+        /* padding-top: 30px; */
+    }
+
+    .last23 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 110px;
+
+    }
+
+    .last24 {
+        padding-top: 90px;
+        padding-left: 50px;
+    }
+
+    .last25 {
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+
+    .last24 h1 {
+        max-width: 420px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 28px;
+        line-height: 0.84286;
+        font-weight: 550;
+        letter-spacing: 0.007em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .last24 a {
+        font-size: 19px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+    }
+
+    .last26 {
+        padding-top: 80px;
+        background-color: black;
+    }
+
+    .last26 h3 {
+        max-width: 420px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 26px;
+        line-height: 0.84286;
+        font-weight: 550;
+        letter-spacing: 0.007em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+    }
+
+    .last26 a {
+        font-size: 19px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+    }
+
+    .lasth11 {
+        max-width: 420px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 0.84286;
+        font-weight: 550;
+        letter-spacing: 0.007em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+
+    }
+    .lasta1 {
+        font-size: 19px;
+        line-height: 1.581002381;
+        font-weight: 400;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: blue;
+    }
+    .apple {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+
+    }
+
+    .apple img {
+
+        width: 80px;
+        height: 80px;
+    }
+</style>
+
+<body>
+
+    <div class="nav1">
+        <p><a href=""><img src="apple-logo.png" alt="" style="width: 20px; height: 20px;"></a></p>
+        <p><a href="">Store</a></p>
+        <p><a href="">Mac</a></p>
+        <p><a href="">iphone</a></p>
+        <p><a href="">ipad</a></p>
+        <p><a href="">Watch</a></p>
+        <p><a href="">Air Pods</a></p>
+        <p><a href="">Tv & Home</a></p>
+        <p><a href="">Entertainment</a></p>
+        <p><a href="">Accessories</a></p>
+        <p><a href="">Suport</a></p>
+        <p><a href=""><img src="search-icon-2044x2048-psdrpqwp.png" alt="" style="width: 20px; height: 20px;"></a></p>
+        <p><a href=""><img src="market.png" alt="" style="width: 20px; height: 20px;"></a></p>
+    </div>
+    <center> <div class="nav2">
+          <div>
+           <img src="iphone_15_pro_light__diyvo6c7yu82_large.svg" alt="">
+            <p> <a href="">iPhone 15 Pro
+                    <br> New</a></p>
+        </div>
+        <div><img src="iphone_15_pro_light__diyvo6c7yu82_large.svg" alt="">
+            <p><a href="">iphone 15 <br> New</a></p>
+        </div>
+        <div><img src="iphone_15_pro_light__diyvo6c7yu82_large.svg" alt="">
+            <p><a href="">iphone 14</a></p>
+        </div>
+        <div> <img src="iphone_13_light__ewo3e0sf67o2_large.svg" alt="">
+            <p><a href="">iphone 13</a></p>
+        </div>
+        <div> <img src="iphone_se_light__fhg8duy6ffau_large (1).svg" alt="" height="000055px">
+            <p><a href="">iphone SE</a></p>
+        </div>
+        <div><img src="iphone_compare_light__f4jj7brpbvm2_large.svg" alt="">
+            <p><a href="">Compare</a></p>
+        </div>
+        <div><img src="airpods_light__8oj157p2476a_large.svg" alt="">
+            <p><a href="">AirPods</a></p>
+        </div>
+        <div><img src="airtag_light__cb2bmnv6aoeu_large.svg" alt="" height="55px">
+            <p><a href="">AirTag</a></p>
+        </div>
+        <div> <img src="accessories_light__ed5l6ipsevqu_large.svg" alt="">
+            <p><a href="">Accessories</a></p>
+        </div>
+        <div> <img src="iphone_ios_light__b8s4ws8o77iq_large.svg" alt="" height="55px">
+            <p><a href="">iOS 17 </a></p>
+        </div>
+        <div> <img src="shop_iphone_light__b2toggskllle_large.svg" alt="">
+            <p><a href="">Shop iPhone</a></p>
+        </div>
+    </div></center>
+    <div class="nav3">
+        <p>Save up to ₹6000.00 instantly on selected iPhone models with HDFC Bank Credit Cards.+ Plus No Cost EMI from
+            most leading banks.‡ <a href="">Shop iPhone</a></p>
+    </div>
+    <div>
+        <div class="nav4">
+            <div>
+                <p class="nav4p">New</p>
+            </div>
+            <center>
+                <div> <img src="iphone_15_pro_logo__xsnr3zpj28yu_large.jpg" alt=""></div>
+                <div> <img src="headline_titanium__cj5ay941qj6u_large.jpg" alt=""></div>
+            </center>
+            <div>
+                <p class="nav4p2">From ₹21483.00/mo.‡ or ₹134900.00*</p>
+            </div>
+            <div> <button>Buy</button></div>
+            <div> <a href="">Learn more ></a>
+            </div>
+            <div class="hero"> <img src="hero_iphone_15_pro__eqwrvy72748y_large.jpg" alt=""></div>
+        </div>
+    </div>
+    <div>
+        <div class="nav5">
+            <div>
+                <p style="color: red;">New</p>
+            </div>
+            <center>
+                <div> <img src="iphone_15_logo__bva4cdj5koty_large.jpg" alt=""></div>
+
+                <h1>Newphoria</h1>
+            </center>
+
+            <p class="nav5p2">From ₹21483.00/mo.‡ or ₹134900.00*</p>
+
+            <div><button>Buy</button></div><br>
+            <a href="">Learn more ></a>
+
+        </div>
+        <div class="hero"> <img src="hero_iphone_15__fano21ho6fqu_large.jpg" alt="" class="imgnav5"></div>
+
+    </div>
+    <div class="nav6">
+
+    </div>
+    <div class="nav7">
+        <div class="nav71">
+            <img src="iphone_se_logo__ii1n5sjcmci2_large.jpg" alt="">
+            <h1>Love the power. <br>
+                Love the price.</h1>
+            <p>From ₹49900.00*</p>
+            <button>Buy</button> <br> <br>
+            <a href="">Learn more ></a>
+        </div>
+        <div class="nav72"> <img src="iphone_se_hero__gd586pazxqqa_large.jpg" alt=""></div>
+    </div>
+
+    <div class="nav8">
+        <div>
+            <p>A Guided Tour of
+            </p>
+            <h1>iPhone 15 &
+            </h1>
+            <h1> iPhone 15 Pro</h1>
+            <button>watch the film</button>
+        </div>
+    </div>
+    <div class="nav9">
+        <h1>Which iPhone is right for you?</h1>
+        <div class="nav91">
+            <div> <img src="compare_iphone_15_pro__c344odaqs5qq_large.png" alt="">
+                <center>
+                    <div class="nav92"> <img src="swatch_iphone_15_pro__gdyn1ct073m2_large.png" alt="">
+                        <div>
+                            <p style=" color: red;">New</p>
+                        </div>
+                        <div><img src="logo_iphone_15_pro__drdmya1am5ea_large.png" alt=""></div>
+                    </div>
+                    <div>
+                        <p>The ultimate iPhone.</p><br>
+
+                        <p> From ₹134900.00*</p>
+
+                        <button> Buy</button> <br><br>
+                        <a href=""> Learn more</a>
+                    </div><br>
+                    <hr>
+                    <h4>17.00 cm (6.7″) or <br> 15.54 cm (6.1″)
+                    </h4>
+                    <p>Super Retina XDR display1</p>
+                    <p>ProMotion technology</p>
+                    <p>Always-On display</p><br><br>
+                    <img src="icon_design__bbi8qdcsnygy_large.png" alt="">
+                    <p>Titanium with textured</p>
+                    <p>matte glass back</p><br>
+                    <p>Action button</p>
+                    <br>
+                    <img src="icon_dynamic_island__d9d7y565nzsm_large.png" alt="">
+                    <p>Dynamic Island</p>
+                    <p>A magical way to interact</p>
+                    <p>with iPhone</p>
+                    <img src="icon_a17__cdbw51i5m1qu_large.png" alt="">
+                    <p>A17 Pro chip</p>
+                    <p>with 6-core GPU</p>
+                    <img src="icon_14_pro_camera__fxu2mrckyk2u_large.png" alt="">
+                    <p>Pro camera system</p>
+                    <p>48MP Main Ultra Wide</p>
+                    <p>Telephoto</p>
+
+                    <p> Super-high-resolution photos</p>
+                    <p> (24MP and 48MP)</p>
+
+                    <p> Next-generation portraits with</p>
+                    <p> Focus and Depth Control</p>
+
+                    <p>Up to</p>
+                    <h1>10x </h1>
+                    <p> optical zoom range</p>
+                    <br>
+                    <img src="icon_sos__d13do2p9n7qu_large.png" alt="">
+                    <p>Emergency SOS</p>
+                    <p>Crash Detection2</p>
+                    <br>
+                    <img src="icon_battery__wqowcbwj50y2_large.png" alt="">
+                    <p>Up to 29 hours</p>
+                    <p>video playback3</p>
+                    <br>
+                    <img src="icon_usbc__dpqakxk8o94y_large.png" alt="">
+                    <p>USB-C</p>
+                    <p>Supports USB 3 for</p>
+                    <p> up to 20x faster transfers5</p>
+                    <br>
+                    <img src="icon_face_id__eyzciiwkc5oy_large.png" alt="">
+                    <p>Face ID</p>
+                    <div style="height: 10px;">
+
+                    </div>
+                    <hr>
+                </center>
+            </div>
+            <div> <img src="compare_iphone_15__cp3codzoxms2_large.png" alt="">
+                <center>
+                    <div><img src="swatch_iphone_15__dt2j59fau9ua_large.png" alt="">
+                        <div>
+                            <p style=" color: red;">New</p>
+                        </div>
+                        <div><img src="logo_iphone_15__cg1a25guu51e_large.png" alt=""></div>
+                    </div>
+                    <div>
+                        <p>A total powerhouse.</p><br>
+
+                        <p>From ₹79900.00*</p>
+
+                        <button>Buy</button> <br><br>
+                        <a href="">Learn more</a>
+                    </div><br>
+                    <hr>
+                    <h4>17.00 cm (6.7″) or <br> 15.54 cm (6.1″)
+                    </h4>
+                    <p>Super Retina XDR display1</p>
+                    <p>-</p>
+                    <p>-</p>
+                    <br><br>
+                    <img src="icon_design__bbi8qdcsnygy_large.png" alt="">
+                    <p>Aluminium with colour‑infused</p>
+                    <p>glass back</p><br>
+                    <p>Ring/Silent switch</p>
+                    <br>
+                    <img src="icon_dynamic_island__d9d7y565nzsm_large.png" alt="">
+                    <p>Dynamic Island</p>
+                    <p>A magical way to interact</p>
+                    <p>with iPhone</p>
+                    <img src="icon_a16__fjqclpv24fma_large.png" alt="">
+                    <p>A16 Bionic chip</p>
+                    <p>with 5-core GPU</p>
+                    <img src="icon_14_camera__e6tkwcfw12wm_large.png" alt="">
+                    <p>Advanced dual-camera system</p>
+
+                    <p> 48MP Main Ultra Wide</p>
+
+
+                    <p> Super-high-resolution photos</p>
+                    <p> (24MP and 48MP)</p>
+
+                    <p> Next-generation portraits with </p>
+                    <p>Focus and Depth Control</p><br><br><br>
+                    <p>
+
+                    </p>
+                    <h1>4x </h1>
+                    <p> optical zoom range</p>
+                    <br>
+                    <img src="icon_sos__d13do2p9n7qu_large.png" alt="">
+                    <p>Emergency SOS</p>
+                    <p>Crash Detection2</p>
+                    <br>
+                    <img src="icon_battery__wqowcbwj50y2_large.png" alt="">
+                    <p>Up to 26 hours</p>
+                    <p>video playback3</p>
+                    <br>
+                    <img src="icon_usbc__dpqakxk8o94y_large.png" alt="">
+                    <p>USB-C</p>
+                    <p>Supports USB 2</p>
+                    <br> <br>
+                    <p>
+                    </p>
+
+                    </p>
+                    <img src="icon_face_id__eyzciiwkc5oy_large.png" alt="">
+                    <p>Face ID</p><br>
+                    <hr>
+                </center>
+            </div>
+            <div> <img src="compare_iphone_14__ct4sjk962pea_large.png" alt="">
+                <center>
+                    <div><img src="swatch_iphone_14__eatap63qk6wm_large.png" alt="">
+                        <div>
+                            <p><br></p>
+                        </div>
+                        <div><img src="logo_iphone_14__beagfaob98eq_large.png" alt=""></div>
+                    </div>
+                    <div>
+                        <p>As amazing as ever.</p><br>
+                        <p>From ₹69900.00*</p>
+                        <button>Buy</button> <br><br>
+                        <a href="">Learn more</a>
+                    </div><br>
+                    <hr>
+                    <h4>16.95 cm (6.7″) or <br> 15.40 cm (6.1″)
+                    </h4>
+                    <p>Super Retina XDR display1</p>
+                    <p>-</p>
+                    <p>-</p>
+                    <br><br>
+                    <img src="icon_design__bbi8qdcsnygy_large.png" alt="">
+                    <p>Aluminium with</p>
+                    <p>glass back</p><br>
+                    <p>Ring/Silent switch</p>
+                    <br><br><br>
+                    <p>-</p><br><br><br><br>
+                    <img src="icon_a15__gde9u4vunqqa_large.png" alt="">
+                    <p>A15 Bionic chip</p>
+                    <p> with 5-core GPU
+
+                    </p>
+                    <img src="icon_14_camera__e6tkwcfw12wm_large.png" alt="">
+                    <p>Dual-camera system</p>
+
+                    <p> 12MP Main Ultra Wide</p>
+                    <br>
+                    <p>-</p>
+                    <p> Portrait mode with </p>
+                    <p>Focus and Depth Control</p><br><br><br>
+                    <p>
+
+                    </p>
+                    <h1>2x </h1>
+                    <p> optical zoom range</p>
+                    <br>
+                    <img src="icon_sos__d13do2p9n7qu_large.png" alt="">
+                    <p>Emergency SOS</p>
+                    <p>Crash Detection2</p>
+                    <br>
+                    <img src="icon_battery__wqowcbwj50y2_large.png" alt="">
+                    <p>Up to 26 hours</p>
+                    <p>video playback3</p>
+                    <br>
+                    <img src="icon_lightning__qkwlyw9y636i_large.png" alt="">
+                    <p>Lightning</p>
+                    <p>Supports USB 2</p>
+                    <br><br><br>
+                    <p>
+
+                    </p>
+                    <img src="icon_face_id__eyzciiwkc5oy_large.png" alt="">
+                    <p>Face ID</p>
+                    <div style="height: 9px;"></div>
+                    <hr>
+                </center>
+            </div>
+            <div> <img src="compare_iphone_se__d5blqx1pgymq_large.png" alt="">
+                <center>
+                    <div><img src="swatch_iphone_se__bygc73yqw22u_large.png" alt="">
+                        <div>
+                            <p><br></p>
+                        </div>
+                        <div> <img src="logo_iphone_se__m265le0wq0q6_large.png" alt=""></div>
+                    </div>
+                    <div>
+                        <p>Serious power.</p>
+                        <p>Serious value.</p>
+                        <p>From ₹69900.00*</p>
+                        <button>Buy</button> <br><br>
+                        <a href="">Learn more</a>
+                    </div>
+                    <br>
+                    <hr>
+                    <h4>11.94 cm (4.7″) <br> <br>
+                    </h4>
+                    <p>Retina HD display</p>
+                    <p>-</p>
+                    <p>-</p>
+                    <br><br>
+                    <img src="icon_design__bbi8qdcsnygy_large.png" alt="">
+                    <p>Aluminium and</p>
+                    <p>glass</p><br>
+                    <p>Ring/Silent switch</p><br><br><br>
+                    <p>-</p>
+                    <br><br><br><br>
+                    <img src="icon_a15__gde9u4vunqqa_large.png" alt="">
+                    <p>A15 Bionic chip</p>
+                    <p> with 4-core GPU</p>
+                    <img src="icon_se_camera__cs1t6sujjdiu_large.png" alt="">
+                    <p>Single-camera system</p>
+
+                    <p> 12MP Main</p>
+
+                    <br>
+                    <p>-</p>
+
+                    <p> Portrait mode with</p>
+                    <p> Depth Control</p>
+                    <br><br><br>
+                    <p>
+
+                    </p>
+                    <h1>1x </h1>
+                    <p> optical zoom range</p>
+                    <br>
+                    <img src="icon_sos__d13do2p9n7qu_large.png" alt="">
+                    <p>Emergency SOS</p>
+                    <p>-</p>
+                    <br>
+                    <img src="icon_battery__wqowcbwj50y2_large.png" alt="">
+                    <p>Up to 15 hours</p>
+                    <p>video playback4</p>
+                    <br>
+                    <img src="icon_lightning__qkwlyw9y636i_large.png" alt="">
+                    <p>Lightning</p>
+                    <p>Supports USB 2</p>
+                    <br><br><br>
+                    <p>
+
+                    </p>
+                    <img src="icon_touch_id__etlcbgeryay6_large.png" alt="">
+                    <p>Face ID</p>
+                    <div style="height: 5px;"></div>
+                    <hr>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="nav10">
+        <br>
+        <a href="">Compare all iPhone models ></a>
+        <a href=""> Shop iPhone ></a>
+    </div>
+    <div class="last">
+        <center>
+            <h1 class="lasth11">Ways to Buy iPhone</h1>
+        </center>
+        <div class="last1">
+            <div class="last2">
+                <h3>Get ₹18700.00-₹64800.00 in</h3>
+                <h3> credit when you</h3>
+                <h3> trade in iPhone 11 or higher.6</h3>
+                <center>
+                    <div class="last4"> <a href="">See what your device is worth</a></div>
+                </center>
+                <img src="trade_in_3up__de3xzubyk1w2_large.jpg" alt="">
+            </div>
+            <div class="last3">
+                <h3>Pay with 3- or 6-month</h3>
+                <h3> No Cost EMI.7</h3>
+                <p> Choose the way that’s right for you.</p>
+                <center>
+                    <div class="last4"> <a href="">Learn more</a></div>
+                </center>
+                <img src="apple_card__bkmaxfjg05ua_large.jpg" alt="">
+            </div>
+        </div><br>
+        <div class="last5">
+            <div>
+                <h1>Why Apple is the best </h1>
+                <h1> place to buy iPhone.</h1>
+                <p>You can choose a payment option that works for </p>
+                <p>you, pay less with a trade‑in, connect your new</p>
+                <p> iPhone to your carrier and get set up quickly.</p>
+                <p>You can also chat with a Specialist anytime.</p>
+                <center><a href="">Learn more ></a></center>
+            </div>
+        </div>
+        <center>
+            <h1 class="lasth11">Featured accessories</h1>
+        </center>
+        <div class="last6">
+            <div class="last7">
+                <h1>MagSafe</h1>
+                <p> Snap on a magnetic case, wallet </p>
+                <p>or both. And get fast, efficient</p>
+                <p> wireless charging.</p>
+
+
+            </div>
+            <div class="last8">
+                <img src="magsafe__bfji5hb1mqsy_large.jpg" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="last9">
+            <div class="last10">
+                <img src="airtag__b5lt0bcbd9ua_large.jpg" alt="">
+            </div>
+            <div class="last11">
+                <center>
+                    <h1>AirTag</h1>
+                    <p>Attach one to your keys. Put another in your</p>
+                    <p>backpack. If they’re misplaced, simply use</p>
+                    <p>the Find My app.</p>
+                    <a href="">Buy Learn more</a>
+                </center>
+            </div>
+        </div>
+        <br>
+        <div class="last12">
+            <div class="last13">
+                <h1>Magic runs in</h1>
+                <h1> the family.</h1>
+                <div class="last14">
+                    <center>
+                        <p>Explore all AirPods models and </p>
+                        <p>find the best ones for you.</p>
+                        <a href="">Learn more ></a>
+                    </center>
+                </div>
+
+                <center><img src="airpods__eb24cvhoe26a_large.jpg" alt=""></center>
+            </div>
+        </div>
+        <center>
+            <a href="" class="lasta1">Shop all iPhone accessories ></a>
+        </center>
+
+        <div class="last15">
+            <div>
+                <img src="icon_delivery__f4vnk0swb0eq_large.png" alt="">
+                <p><b>Free delivery and pickup</b><br>
+                    Get free delivery or pick up at your <br> Apple Store.</p>
+
+                <a href=""> Learn more ></a>
+            </div>
+            <div><img src="icon_large.svg" alt="">
+                <p><b>Ways to Buy
+                    </b><br>
+                    Choose the way that’s right <br> for you.</p>
+
+                <a href=""> Learn more ></a>
+            </div>
+            <div class="last16"><img src="icon_personal_session__e6a44cdlylm6_large.png" alt="">
+                <p><b>Get help buying
+                    </b><br> Have a question? Call a Specialist <br> or chat online. <br>
+
+                    Call 000800 040 1966.</p>
+
+                <a href="">Contact us ></a>
+            </div>
+        </div>
+        <center>
+            <h1 class="lasth11">What makes an iPhone an iPhone?</h1>
+        </center>
+        <div class="last17" style="background-image: url(ios17__glwsbqdnc6um_large.jpg); height: 555px;">
+
+            <center>
+                <div class="last18">
+                    <h1>iOS 17</h1>
+                    <p> Every day. More extraordinary.</p>
+
+                    <a href="">Learn more ></a>
+                </div>
+            </center>
+
+        </div><br>
+        <div class="last19">
+            <div class="last20">
+                <h1>Switching to iPhone</h1>
+                <h1> is super simple.</h1>
+                <center><a href="">Learn more ></a></center>
+                <img src="switching_to_iphone__e3oz9r418awm_large.jpg" alt="" class="last21">
+            </div>
+            <div class="last20">
+                <h1>Privacy.</h1>
+                <h1>That’s iPhone.</h1>
+                <center><a href="">Learn more ></a></center>
+                <img src="privacy_alt__dxvkgel8b82u_large.jpg" alt="" class="last22">
+            </div>
+        </div>
+        <div>
+            <center>
+                <h1 class="lasth11">Get more out of your iPhone.</h1>
+            </center>
+        </div>
+        <br>
+        <div class="last23">
+            <div class="last25">
+                <img src="bundle__gkzbqz77r82m_large.jpg" alt="">
+            </div>
+            <div class="last24">
+                <img src="apple_one__cq8ojsqxitea_large.jpg" alt="">
+                <center>
+                    <h1>Bundle four Apple services.</h1>
+                    <h1>And enjoy more for less. </h1>
+                    <div style="display: grid;grid-template-columns: auto auto; grid-gap: 30px;">
+                        <a href="">Try it free8</a><a href="">Learn more ></a>
+                    </div>
+                </center>
+            </div>
+        </div><br>
+        <div class="last26">
+            <div>
+                <center> <img src="apple_tv_plus_logo__gkj8brywycuq_large.png" alt="">
+                    <h3>Get 3 months of Apple TV+ free</h3>
+                    <h3> when you buy an iPhone.</h3>
+                    <div
+                        style="display: grid;grid-template-columns: auto auto; grid-gap: 30px; padding-left: 350px; padding-right: 350px;">
+                        <a href="">Try it free8</a><a href="">Learn more ></a>
+                </center>
+            </div>
+           
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="" alt="Image 1">
+                        <img src="" alt=" 2">
+                        <img src="" alt="Image 3">
+                        <img src="" alt="Image 1">
+                        <img src="" alt=" 2">
+                        <img src="" alt="Image 3">
+                        <img src="" alt="Image 1">
+                        <img src="" alt=" 2">
+                        <img src="" alt="Image 3">
+                        <img src="" alt="Image 1">
+                        <img src="" alt=" 2">
+                        <img src="" alt="Image 3">
+                       
+                    </div>
+                    
+                </div>
+            </div>
+       
+        <div class="apple">
+            <div>
+                <img src="apple-logo.png" alt="">
+            </div>
+            <div>
+                <img src="apple-logo.png" alt="">
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>

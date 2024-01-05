@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    .header {
+font-family: var(--body-font-family);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h3 {
+        color: black;
+        text-align: center;
+        width: 25%;
+    }
+
+    .h3:hover {
+        color: red;
+    }
+
+    .reservationbutton {
+        text-align: center;
+        width: 25%;
+        padding: 20px;
+    }
+
+    .b1 {
+        color: white;
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .b1:hover {
+        background-color: brown;
+    }
+
+    .cnt {
+        padding: 8px;
+        color: black;
+    }
+
+    .cnt:hover {
+        color: red;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .din { position:relative; 
+        display: flex;
+        /* height: 100%;
+        width: 1350px; */
+        background-color: black;
+
+    }
+    .din video{
+        position:relative;
+    z-index:0;
+    }
+
+    .dinimg {
+        padding: 0px 500px;
+        position: relative;
+        height: 400px;
+        width: 516px;
+    }
+
+    .delst {
+        position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+        padding: 100px 0px 0px 130px;
+        /* text-align: center; */
+    }
+
+    .h1del {
+        font-size: 70px;
+    }
+
+    .part {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 2%;
+
+    }
+
+    .part img {
+        padding: 0px 0px 0px 100px;
+        width: 300px;
+        height: 300px;
+    }
+    .names {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .partt {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 2%;
+
+    }
+
+    .partt img {
+        padding: 0px 0px 0px 100px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .namess {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .fi {
+        width: 1300px;
+    }
+
+    .parttt {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-gap: 2%;
+
+    }
+
+    .parttt img {
+        padding: 0px 0px 0px 150px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .namesss {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hover01 {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-gap: 10%;
+        
+    }
+
+    .hover01 figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .hover01 figure:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    
+    .hover02 {
+        display: grid;
+        grid-template-columns: 20% 30% 20%;
+        grid-gap: 10%;
+        
+    }
+    .hover02 figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .hover02 figure:hover img {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    figure {
+        width: 600px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: hidden;
+    }
+
+  
+    .bgalexa {
+        height: 500px;
+        background-image: url("alex-haney-CAhjZmVk5H4-unsplash.jpg");
+        background-attachment: fixed;
+        padding: 10px;
+        border: 10px;
+    }
+    .lastt{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
+    .imgone{
+        width: 600px;
+
+    }
+    .imgonee{
+        
+        width: 400px;
+     }
+    .imgtwo{
+        margin-left: 25px;
+        width: 500px;
+
+    }
+    .imgtwoo{
+        
+       width: 400px;
+    }
+    .i{
+        padding: 10px px;
+    }
+    /* .red{
+        width: 300px;
+    } */
+   .last{ 
+    background-image: url(daan-evers-tKN1WXrzQ3s-unsplash.jpg);
+    height: 90%;
+   }
+   .last{
+    background-color: black;
+    
+   }
+</style>
+
+<body>
+
+    <div class="header">
+        <a href="" class="h3">
+            <h2>Crispy Kitchen</h2>
+        </a>
+
+        <a href="">
+            <p class="cnt">Home</p>
+        </a>
+        <a href="">
+            <p class="cnt">Story</p>
+        </a>
+        <a href="">
+            <p class="cnt">Menu</p>
+        </a>
+        <a href="">
+            <p class="cnt">Our Updates</p>
+        </a>
+        <a href="">
+            <p class="cnt">Contact</p>
+        </a>
+
+        <div class="reservationbutton">
+            <button class="b1">Reservation</button>
+        </div>
+    </div>
+    <div class="din">
+        <video autoplay src="production_ID_3769033.mp4">
+        </video>
+        <div class="delst">
+            <h1 style="color: white;" class="h1del">Delicious Steaks</h1>
+            <img src="jason-leung-O67LZfeyYBk-unsplash.jpg" alt="" class="dinimg" />
+       
+    </div>
+    </div>
+    <div class="part2">
+
+        <center>
+            <h1>Special Menus</h1>
+        </center>
+        <div class="part">
+            <img src="brett-jordan-8xt8-HIFqc8-unsplash.jpg" alt="">
+
+            <img src="farhad-ibrahimzade-MGKqxm6u2bc-unsplash.jpg" alt="">
+            <img src="keriliwi-c3mFafsFz2w-unsplash.jpg" alt="">
+        </div>
+        <div class="names">
+            <h1>Morning Fresh</h1>
+            <h1>Tooplate Soup</h1>
+            <h1>Premium Steak</h1>
+        </div>
+        <div class="partt">
+            <img src="farhad-ibrahimzade-ZipYER3NLhY-unsplash.jpg" alt="">
+            <img src="louis-hansel-dphM2U1xq0U-unsplash.jpg" alt="">
+            <img src="farhad-ibrahimzade-D5c9ZciQy_I-unsplash.jpg" alt="">
+        </div>
+        <div class="namess">
+            <h1>Morning Fresh</h1>
+            <h1>Tooplate Soup</h1>
+            <h1>Premium Steak</h1>
+        </div>
+    </div>
+
+
+
+
+    <div class="bgalexa">
+
+    </div>
+    <div>
+        <center>
+            <h1>NEWS & EVENTS</h1>
+        </center>
+    </div>
+    
+        <div class="hover01 column">
+            <div class="i">
+                <figure class="imgone"><img src="pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg" /></figure>
+               
+            </div>
+            <div class="i">
+                <figure  class="imgone">
+                    <img src="stefan-johnson-xIFbDeGcy44-unsplash.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+    
+
+
+    <div class="namesss">
+        <h1 style="position: relative;"></h1>
+    </div>
+
+   
+
+    <div>
+        <div class="hover02 column">
+            <div class="i">
+                <figure class="imgonee"><img src="gilles-lambert-S_LhjpfIdm4-unsplash.jpg" class="red"></figure>
+              
+            </div>
+            <div class="i">
+                <figure  class="imgtwo">
+                    <img  src="caroline-attwood-bpPTlXWTOvg-unsplash.jpg" alt="" class="red">
+                   
+                </figure>
+            </div>
+            <div class="i">
+                <figure  class="imgtwoo">
+                    <img  src="louis-hansel-GiIiRV0FjwU-unsplash.jpg" alt="" class="red">
+                 
+                </figure>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="last">
+        <div class="lastt">
+           
+                <div>
+                    <h1>Crispy Kitchen</h1>
+                    <h3>Location</h3> <br>
+                    <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                    <button>Directions</button>
+                </div>
+                <div>
+                    <h3> Opening Hours</h3>
+                    <p>Monday - Friday</p>
+
+                    <p> 10:00 AM - 08:00 PM</p>
+
+                    <p>Tel: 010-02-0340</p>
+                </div>
+                <div>
+                   <h3> Social</h3>
+
+                   <p> Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+                   <p> Design: Tooplate</p>
+                </div>
+            
+
+            
+        </div>
+    </div>
+</body>
+
+</html>

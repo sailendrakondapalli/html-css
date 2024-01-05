@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav1 {
+        height: 40px;
+        background-color: navy;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px;
+    }
+
+    .dropdown-content a:hover {
+        color: red;
+    }
+
+    .nav2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+
+    }
+
+    .nav3 {
+        background-color: navy;
+    }
+
+    .nav4 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .m1 {
+        height: 250px;
+    }
+
+    .m11 {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .m11 img {
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .m11 a {
+        color: red;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        /* Add cursor style to indicate it's clickable */
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 12px;
+        z-index: 1;
+    }
+
+    /* Show the dropdown content when hovering over the dropdown */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .yvardhaman {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .yy {
+        text-align: center;
+        font: normal 600 27px/50px "Catamaran", Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    .rr {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rr img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .Announcements {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .Announcements a {
+        color: red;
+    }
+
+    .Announcements1 h3 {
+        text-align: center;
+    }
+
+    .rrr h3 {
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+    }
+
+    .cards img {
+        width: 405px;
+    }
+
+    .cin {
+        box-shadow: 2px 2px 2px 2px;
+
+    }
+
+    .cin h3 {
+        text-align: center;
+    }
+
+    .cin p {
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }
+
+    .cin button {
+        cursor: pointer;
+        color: white;
+        background-color: red;
+    }
+
+    .cin a {
+        color: black;
+    }
+
+    .keyrecruiters h3 {
+        text-align: center;
+    }
+
+    .foot {
+        background-color: black;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .foot img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .foot a {
+        color: white;
+    }
+
+    .foot h4 {
+        color: white;
+    }
+
+    .foot p {
+        color: white;
+    }
+
+    .foot a:hover {
+        color: red;
+    }
+    .foot b{
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="nav1">
+        <a href="">VARDHAMAN COLLEGE OF ENGINEERING</a>
+        <a href="">VISION MISSION CORE VALUES </a>
+        <a href="">CAMPUSTOUR</a>
+        <a href="">ARIIA</a>
+        <a href="">IQAC</a>
+        <a href="">NAAC </a>
+        <a href="">NIRF</a>
+        <a href="">NBA</a>
+        <a href="">UGC</a>
+        <a href="">NCC</a>
+        <a href="">LOGIN</a>
+    </div>
+    <div class="nav2">
+        <div> <img src="vardhamanlogo-1.png" alt="" height="120px" width="150px"></div>
+        <div>
+            <h2>VARDHAMAN COLLEGE OF ENGINEERING</h2>
+            <p>An Autonomous Institution, Affiliated to JNTUH & Approved by AICTE </p>
+
+            <p> Accredited by NAAC with A++ Grade</p>
+        </div>
+        <div>
+            <p>EAMCET/ECET/ICET CODE: VMEG | College Code : 88</p>
+        </div>
+    </div>
+    <div class="nav3">
+        <div class="dropdown">
+            <a href=""> ABOUT</a>
+            <div class="dropdown-content">
+                <a href="">About Vardhaman
+                </a>
+                <a href="">Management</a>
+                <a href="">Governing Body</a>
+                <a href="">Principal’s Desk</a>
+                <a href="">Deans</a>
+            </div>
+        </div>
+        <div class="dropdown">
+
+            <a href="">ADMISSIONS</a>
+            <div class="dropdown-content">
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="">ACADEMICS</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+
+            <a href="">RESEARCH</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+            <a href="">IPR & CONSULTANCY</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown"> <a href="">TRAINING AND PLACEMENTS</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+            <a href="">INCUBATION</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+            <a href="">CAMPUS LIFE</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown"> <a href="">CONTACT US</a>
+            <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown"> <a href=""><img src="search-icon-2044x2048-psdrpqwp.png" alt="" width=20px
+                    height="20px"></a>
+            <div class="dropdown-content"></div>
+        </div>
+    </div>
+    <div>
+        <img src="Screenshot-2023-12-14-at-11.46.10 AM.png" alt="" width="1327px">
+    </div>
+    <div class="nav4">
+        <div>
+            <h1 class="yy">About Vardhaman</h1>
+            <p>Vardhaman College of Engineering –a premier autonomous institution affiliated to JNTU, Hyderabad located
+                in Shamshabad, Hyderabad boasts of a beautiful green campus. Nestled amidst the lush green valley in
+                Kacharam Village, Ranga Reddy district, Hyderabad the campus is situated far from the hustle and bustle
+                of city life to provide the perfect backdrop for learning in harmony with nature.
+
+                A plethora of undergraduate B.Tech programmes in CSE, CSE (AI&ML), CSE(DS), AI&ML, AI&DS, IT, ECE, EEE,
+                ME and CE; postgraduate M.Tech programmes with specialisation in DECS, PEED, CSE, SE, and ED; MBA
+                programme; and doctoral programmes in CSE, ECE and ME are offered. VCE is accredited by NAAC at an A++
+                grade with a CGPA of 3.58 on a scale of 4. Six of its UG engineering programmes – B.Tech ECE, EEE, CSE,
+                ME, CE, and IT are accredited by the National Board of Accreditation (NBA), New Delhi under the Tier-1
+                category. The MBA program has been accredited by NBA in 2023.</p>
+        </div>
+        <div>
+            <h3 class="yy">News</h3>
+            <marquee behavior="" direction="up" class="m1">
+                <div class="m11">
+                    <div> <img src="newspaper2.png" alt=""></div>
+                    <div>
+                        <p>Vardhaman College of Engineering bags an award in the category "Most Promising Engineering
+                            College"
+                            conferred upon by The Times Group.</p>
+                    </div>
+                </div>
+                <div class="m11">
+                    <div>
+                        <img src="conference.png" alt="">
+                    </div>
+                    <div>
+                        <p>Department of Chemistry at Vardhaman College of Engineering presents Carnival of Chemistry
+                            2K23,
+                            Click here to register.</p>
+                    </div>
+                </div>
+                <div class="m11">
+                    <div> <img src="envelope.png" alt=""></div>
+                    <div>
+                        <p>Vardhaman College of Engineering offers Google Cloud Computing Foundations curriculum.</p>
+                    </div>
+                </div>
+                <div class="m11">
+                    <div><img src="newspaper2.png" alt=""></div>
+                    <div>
+                        <p>AICTE-LITE Advanced Web Development Minor Programme is offered at Vardhaman College of
+                            Engineering.
+                        </p>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </div>
+    <h1 class="yy">Why Vardhaman</h1>
+    <div class="yvardhaman">
+        <div>
+            <div class="m11">
+                <img src="star.png" alt="">
+                <div>
+                    <h3>Teaching-learning-evaluation</h3>
+                    <p>We follow the outcome-based education process with a constructive alignment of intended learning
+                        outcomes
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="m11">
+                <img src="sand-castle.png" alt="">
+                <div>
+                    <h3>Placements</h3>
+                    <p>Our students get placed in ace multinational companies (MNCs).
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="m11">
+                <img src="letter-e.png" alt="">
+                <div>
+                    <h3>Entrepreneurial ecosystem</h3>
+                    <p>The Center of Innovation and Entrepreneurship (CIE) at VCE provides a robust platform
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="m11">
+                <img src="search-location.png" alt="">
+                <div>
+                    <h3>Infrastructure</h3>
+                    <p>The college is equipped with all facilities such as state-of-the-art laboratories, research
+                        centres and auditoriums.
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="m11">
+                <img src="premium-badge.png" alt="">
+                <div>
+                    <h3>Outreach</h3>
+                    <p>The college has a dedicated Outreach cell to grow strong bonds with the world outside
+                        The college has a dedicated Outreach cell to grow strong bonds with the world outside
+                        <a href=""> Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="m11">
+                <img src="setting.png" alt="">
+                <div>
+                    <h3>Student support</h3>
+                    <p>Looking into the safety concerns of the students, the college has an anti-ragging cell that
+                        ensures a ragging free campus
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="m11">
+                <img src="medical.png" alt="">
+                <div>
+                    <h3>Co-curricular and recreational activities</h3>
+                    <p>Co-curricular and extra- curricular activities are conducted through several associations
+                        <a href=""> Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="m11">
+                <img src="campus.png" alt="">
+                <div>
+                    <h3>Green campus</h3>
+                    <p>The college campus has spread lush greenery throughout and that truly makes it a sight to behold.
+                        <a href="">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rrr">
+        <h3>Ranking & Recognition</h3>
+        <marquee behavior="" direction="">
+            <div class="rr">
+                <img src="ariia.jpg" alt="">
+                <img src="campus.png" alt="">
+                <img src="iee.png" alt="">
+                <img src="nac.png" alt="">
+                <img src="ugc.png" alt="">
+            </div>
+        </marquee>
+    </div>
+    <div class="Announcements1">
+        <h3>Announcements</h3>
+        <div class="Announcements">
+            <div>
+                <p>Vardhaman College of Engineering bags an award in the category <a href=""> "Most Promising
+                        Engineering College"</a> conferred
+                    upon by The Times Group.</p>
+
+                <p>Vardhaman College of Engineering offers a Google Cloud Computing Foundations curriculum.</p>
+
+                <p>AICTE-LITE Advanced Web Development Minor Programme is offered at Vardhaman College of Engineering.
+                </p>
+
+                <p> Salesforce Students Journey <a href="">Click here</a> </p>
+
+                <p> JNTU Hyderabad has recognized VCE as a Research Centre in the Departments of CSE, ECE, and ME</p>
+
+                <p> Vardhaman College of Engineering has crossed another milestone of success by emerging as a top
+                    college in
+                    thriving UGC - College with Potential for Excellence (CPE) out of two Engineering colleges from the
+                    State of
+                    Telangana, <a href=""> Read More.</a></p>
+                <h5><a href="">For Archived Announcements Click Here</a></h5>
+            </div>
+            <div>
+                <iframe width="600" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <h3><a href="">TEDxVCE Videos</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="cin">
+            <img src="University1.png" alt="">
+            <div>
+                <h3><a href="">Academic Innovations</a></h3>
+                <p> Academic Innovation is the academic support division at Vardhaman College of Engineering (VCEH) that
+                    brings together experts in…
+                    <br>
+                    <button>Read More</button>
+                </p>
+            </div>
+        </div>
+        <div class="cin">
+            <img src="epics-high.jpg" alt="">
+            <div>
+                <h3> <a href="">EPICS @ VARDHAMAN</a> </h3>
+                <p> Vardhaman College of Engineering signed a MoU with Purdue University to teach EPICS courses at
+                    Vardhaman. We have been following the EPICS curriculum since 2015..
+                    <br>
+                    <button>Read More</button>
+                </p>
+            </div>
+        </div>
+        <div class="cin">
+            <img src="University3-1.png" alt="">
+            <div>
+                <h3> <a href="">Research Highlights</a></h3>
+                <p> Vardhaman College has been a leader in undergraduate research for many years. We provide our
+                    students with opportunities…
+                    <br>
+                    <button>Read More</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="keyrecruiters">
+        <h3>Key Recruiters</h3>
+        <marquee behavior="" direction="left">
+            <div class="rr">
+
+                <img src="ariia.jpg" alt="">
+                <img src="campus.png" alt="">
+                <img src="iee.png" alt="">
+                <img src="nac.png" alt="">
+                <img src="ugc.png" alt="">
+            </div>
+        </marquee>
+    </div>
+    <div class="foot">
+        <div style="padding: 20px 20px 20px 20px;">
+            <h4>ADDRESS</h4>
+            <p>Vardhaman College Of Engineering</p>
+            <p>Kacharam, Shamshabad – 501218</p>
+            <p>Hyderabad, Telangana, India</p>
+            <br>
+            <b>Office Hours:</b>
+            <p>8:00am – 5:00pm</p>
+            <b>Phone Number:</b>
+            <p><a href="">+91 8688901557</a></p>
+            <br>
+            <p>Email</p>
+            <p><a href="">info@vardhaman.org</a></p>
+        </div>
+        <div  style="padding: 20px 20px 20px 20px;">
+            <h4>RESOURCES</h4>
+            <p><a href="">Curriculum</a></p>
+            <p><a href=""> Academic Calendar</a></p>
+            <p><a href="">Examinations</a></p>
+            <p><a href=""> News Letter</a></p>
+            <p><a href="">Committees</a></p>
+            <p><a href="">Careers</a></p>
+            <p><a href="">More...</a></p>
+
+        </div>
+        <div  style="padding: 20px 20px 20px 20px;">
+            <h4>QUICK LINKS</h4>
+            <p><a href=""> Mandatory Disclosure</a></p>
+            <p><a href=""> Transport</a></p>
+            <p><a href=""> Anti Ragging</a></p>
+            <p><a href="">Grievance Redressal</a></p>
+            <p><a href=""> Tuition Fee Payment</a></p>
+            <p><a href="">Student Verification</a></p>
+            <p><a href="">More...</a></p>
+
+        </div>
+        <div  style="padding: 20px 20px 20px 20px;">
+            <h4>CONNECT WITH US</h4>
+
+            <img src="facebook.png" alt="">
+            <img src="twitter (2).png" alt="">
+        </div>
+    </div>
+    <div>
+        <p style="color: black; text-align: center;">Copyright © 2023 Vardhaman College of Engineering. All Rights
+            Reserved</p>
+    </div>
+</body>
+
+</html>
